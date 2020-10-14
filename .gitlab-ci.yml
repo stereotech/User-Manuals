@@ -1,0 +1,76 @@
+stages:
+  - build
+  - deploy
+
+ExtractTranlations:
+  stage: build
+  image: node
+  cache:
+    paths:
+      - node_modules
+  before_script:
+    - npm install
+  script:
+    - node ./scripts/extract-translations.js
+  artifacts:
+    paths:
+      - skeletons
+      - xliff
+
+GeneratePdf:
+  stage: build
+  image: node:stretch-slim
+  cache:
+    paths:
+      - node_modules
+  before_script:
+    - apt update
+    - apt install fonts-roboto -y
+    - apt install libfontconfig -y
+    - npm install
+    - node ./scripts/generate-menu.js
+  script:
+    - node ./scripts/generate-pdf.js
+  artifacts:
+    paths:
+      - pdf
+
+GenerateQrCode:
+  stage: build
+  image: node:stretch-slim
+  cache:
+    paths:
+      - node_modules
+  before_script:
+    - npm install
+    - node ./scripts/generate-menu.js
+  script:
+    - node ./scripts/generate-qrcode.js
+  artifacts:
+    paths:
+      - qrcode
+
+DeployPdf:
+  stage: deploy
+  image: python:latest
+  needs: [GeneratePdf]
+  before_script:
+    - pip install awscli
+  script:
+    - aws s3 cp pdf/ s3://${BUCKET_NAME}/manuals --recursive --acl public-read
+  only:
+    - master
+
+trigger_build_website:
+  stage: deploy
+  script:
+    - "curl -X POST -F token=$TOKEN -F ref=master https://gitlab.com/api/v4/projects/12904084/trigger/pipeline"
+  only:
+    - master
+
+trigger_build_stereotech_app:
+  stage: deploy
+  script:
+    - "curl -X POST -F token=$WORK_DOCS_TOKEN -F ref=master https://gitlab.com/api/v4/projects/17106030/trigger/pipeline"
+  only:
+    - develop

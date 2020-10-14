@@ -1,0 +1,16 @@
+{
+    "name": "products-documentations",
+    "description": "Products Documentations",
+    "authors": "Stereotech LLC.",
+    "version": "1.0.0",
+    "main": "",
+    "dependencies": {
+        "@svgdotjs/svg.js": "^3.0.16",
+        "cheerio": "^1.0.0-rc.3",
+        "markdown-pdf": "^10.0.0",
+        "md2xliff": "^2.0.0",
+        "qrcode": "^1.4.4",
+        "roboto-fontface": "^0.10.0",
+        "through2": "^3.0.1"
+    }
+}
