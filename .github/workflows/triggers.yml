@@ -18,3 +18,10 @@ jobs:
       - name: Run a one-line script
         run: |
           curl -XPOST -u "${{ secrets.PAT_USERNAME}}:${{secrets.PAT_TOKEN}}" -H "Accept: application/vnd.github.everest-preview+json" -H "Content-Type: application/json" https://api.github.com/repos/stereotech/stereotech.org/dispatches --data '{"event_type": "build_application"}'
+
+  triggerStereotechApp:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run a one-line script
+        run: |
+          curl -XPOST -u "${{ secrets.PAT_USERNAME}}:${{secrets.PAT_TOKEN}}" -H "Accept: application/vnd.github.everest-preview+json" -H "Content-Type: application/json" https://api.github.com/repos/stereotech/Stereotech-Private-App/dispatches --data '{"event_type": "build_application"}'
