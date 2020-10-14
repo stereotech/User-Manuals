@@ -1,0 +1,20 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Triggers
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  triggerStereotechOrg:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run a one-line script
+        run: |
+          curl -XPOST -u "${{ secrets.PAT_USERNAME}}:${{secrets.PAT_TOKEN}}" -H "Accept: application/vnd.github.everest-preview+json" -H "Content-Type: application/json" https://api.github.com/repos/stereotech/stereotech.org/dispatches --data '{"event_type": "build_application"}'
