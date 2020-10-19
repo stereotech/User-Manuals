@@ -5,7 +5,7 @@ description: Key product information
 
 ## Safety and standards
 
-3D printer Stereotech meets the requirements for this type of equipment on the territory of the Eurasian Economic Union (Declaration of Conformity of the EEU No.RU ДRU.АБ93.В.10000).
+3D printer Stereotech meets the requirements for this type of equipment on the territory of the Eurasian Economic Union (Declaration of Conformity of the ЕАЭС №RU ДRU.НХ37.В.10003/20).
 
 ![EAC](/docs/ste320/introduction/eac.jpg)
 
@@ -64,30 +64,30 @@ Use your regular programs for CAD modelling. The STE Slicer software is compatib
 
 ## Technical features
 
-| Feature                          | Value                                                                                   |
-| --------------------------------------- | ------------------------------------------------------------------------------------------ |
-| Nozzle diameter                           | 0.4 mm                                                                                     |
-| Printing head                      | Dual extruder
-             |
-| Power                                 | 100-240 VAC/50-60 Hz, 350 W
-             |
-| Build platform                    | Platform with two additional axes
-             |
-| Print resolution (layer thickness)        | 200-10 micron                                                                              |
-| Printing head speed | up to 150 mm/s                                                                                |
-| Nozzle temperature                       | up to 320°C
-             |
-| Technology                              | 5D Additive Manufacturing (5Dtech)/Fused Filament Fabrication (FFF)/Fused Deposition Modeling (FDM)
-             |
-| File types                             | STL, OBJ, 3MF, STEP
-             |
-| Ambient temperature and humidity                | temperature 15-35°C, relative humidity 10-90%
-             |
-| Build volume                          | up to 330 x 330 x 250 mm
-             |  
-| Supported materials                | PLA, ABS, SBS, Nylon, PC, TPU. Optimized for: Filamentarno! materials 
-             |
-| Thread diameter                            | 1.75 mm                                                                                    |
-| Software                 | STE Slicer, STE App (control software)
-             |
-| Connection interfaces                  | Wi-Fi, LAN, USB port
+| Feature                            | Value                                                                                               |
+| ---------------------------------- | --------------------------------------------------------------------------------------------------- |
+| Nozzle diameter                    | 0.4 mm                                                                                              |
+| Printing head                      | Dual extruder                                                                                       |
+|                                    |
+| Power                              | 100-240 VAC/50-60 Hz, 350 W                                                                         |
+|                                    |
+| Build platform                     | Platform with two additional axes                                                                   |
+|                                    |
+| Print resolution (layer thickness) | 200-10 micron                                                                                       |
+| Printing head speed                | up to 150 mm/s                                                                                      |
+| Nozzle temperature                 | up to 320°C                                                                                         |
+|                                    |
+| Technology                         | 5D Additive Manufacturing (5Dtech)/Fused Filament Fabrication (FFF)/Fused Deposition Modeling (FDM) |
+|                                    |
+| File types                         | STL, OBJ, 3MF, STEP                                                                                 |
+|                                    |
+| Ambient temperature and humidity   | temperature 15-35°C, relative humidity 10-90%                                                       |
+|                                    |
+| Build volume                       | up to 330 x 330 x 250 mm                                                                            |
+|                                    |
+| Supported materials                | PLA, ABS, SBS, Nylon, PC, TPU. Optimized for: Filamentarno! materials                               |
+|                                    |
+| Thread diameter                    | 1.75 mm                                                                                             |
+| Software                           | STE Slicer, STE App (control software)                                                              |
+|                                    |
+| Connection interfaces              | Wi-Fi, LAN, USB port                                                                                |
