@@ -12,5 +12,8 @@
         "qrcode": "^1.4.4",
         "roboto-fontface": "^0.10.0",
         "through2": "^3.0.1"
+    },
+    "devDependencies": {
+        "typescript": "^4.0.5"
     }
 }
