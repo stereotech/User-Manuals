@@ -84,11 +84,11 @@ description: Техническое обслуживание
 3. Выдвинте модуль от себя до упора
 4. Затяните установочные гайки
 
-![module_setup](/docs/ste520/service/module_setup.jpg)
+![module_setup](/docs/ste520/service/module_install.jpg)
 
 Подключите модуль, вставив разъем и зукрутив резьбовое соединение.
 
-![module_inject](/docs/ste520/service/module_inject.jpg)
+![module_inject](/docs/ste520/service/plug_inject.jpg)
 
 > Внимание! Во избежание поломки устройства всегда закрывайте неиспользуемый разъем заглушкой.
 
