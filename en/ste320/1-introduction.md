@@ -3,45 +3,22 @@ title: Introduction
 description: Key product information
 ---
 
-## Safety and standards
+## Simplified EU Declaration of conformity
 
-3D printer Stereotech meets the requirements for this type of equipment on the territory of the Eurasian Economic Union (Declaration of Conformity of the ЕАЭС №RU ДRU.НХ37.В.10003/20).
+Hereby, Stereotech LLC declares that the 5D printer Stereotech (models: 520 Pro, 530 Pro, 520 Hybrid, 530 Hybrid, 520 Fiber, 530 Fiber) is in conformity with the essential requirements and other relevant requirements of the Directive 2014/53/EU. The full text of the EU declaration of conformity is available at the following internet address: <www.stereotech.org/info/documents> .
 
-![EAC](/docs/ste320/introduction/eac.jpg)
+## Exposure to radio frequency
 
-## Principle of operation
+In accordance with Article 10.8 of the Directive 2014/53/EU the 5D printer Stereotech (models: 520 Pro, 530 Pro, 520 Hybrid, 530 Hybrid, 520 Fiber, 530 Fiber) operates in compliance with harmonised standard EN 300 328 v2.1.1 and transceives within the frequency band 2,400-2,483.5 MHz and, as per Clause 4.3.2.2 for wideband modulation type equipment, operates at a maximum e.i.r.p. of 20dBm. 
 
-The STE 320 3D printer uses Fused Filament Fabrication (FFF) technology. The principle of operation of FFF technology is shown below.
+5D printer Stereotech (models: 520 Pro, 530 Pro, 520 Hybrid, 530 Hybrid, 520 Fiber, 530 Fiber) also operates in compliance with harmonised standard EN 301 893 V2.1.1 and transceives within the frequency bands 5150-5350MHz, and 5470-5725MHz and, as per Clause 4.2.3.2 for wideband modulation type equipment, operates at a maximum e.i.r.p. of 23dBm (5150-5350 MHz) and 30dBm (5450-5725 MHz).
 
-![Principle](/docs/ste320/introduction/principle.jpg)
+In accordance with Article 10.10 of the Directive 2014/53/EU, and as per below list of country codes, the operating bands 5150-5350MHz are strictly for indoor usage only.
 
-## Technical features
+![table](/docs/table.jpg)
 
-| Feature                            | Value                                                                 |
-| ---------------------------------- | --------------------------------------------------------------------- |
-| Nozzle diameter                    | 0.4 mm                                                                |
-| Printing head                      | Dual extruder                                                         |
-|                                    |
-| Power                              | 100-240 VAC/50-60 Hz, 350 W                                           |
-|                                    |
-| Build platform                     | Heated glass platform, temperature up to 120°C                        |
-| Print resolution (layer thickness) | 200-20 microns                                                        |
-| Printing head speed                | up to 150 mm/s                                                        |
-| Nozzle temperature                 | up to 320°C                                                           |
-|                                    |
-| The temperature of the bed         | up to 120°C                                                           |
-|                                    |
-| Technology                         | Fused Filament Fabrication (FFF)/Fused Deposition Modeling (FDM)      |
-|                                    |
-| File types                         | STL, OBJ, 3MF, STEP                                                   |
-|                                    |
-| Ambient temperature and humidity   | temperature 15-35°C, relative humidity 10-90%                         |
-|                                    |
-| Build volume                       | up to 300 x 310 x 400 mm                                              |
-|                                    |
-| Supported materials                | PLA, ABS, SBS, Nylon, PC, TPU. Optimized for: Filamentarno! materials |
-|                                    |
-| Thread diameter                    | 1.75 mm                                                               |
-| Software                           | STE App management software, STE Slicer, Ultimaker Cura               |
-| Connection interfaces              | Wi-Fi, LAN, USB port                                                  |
+## EAEU Declaration of conformity
+
+5D printer Stereotech (models: 520 Pro, 530 Pro, 520 Hybrid, 530 Hybrid, 520 Fiber, 530 Fiber) meets the requirements for this type of equipment on the territory of the Eurasian Economic Union (EAEU declaration of conformity № RU ДRU.НХ37.В.10003/20). The full text of the EAEU declaration of conformity is available at the following internet address: <www.stereotech.org/info/documents> .
+
 
