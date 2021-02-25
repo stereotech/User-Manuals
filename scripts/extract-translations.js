@@ -37,6 +37,6 @@ filelist.forEach(filename => {
     var file = fs.readFileSync(filename, 'utf8')
     var result = extract(file, filename)
     var paths = result.data.markdownFileName.split("/")
-    fs.writeFileSync("skeletons/" + result.data.srcLang + result.data.trgLang + result.data.skeletonFilename.replace(/\//gm, "_"), result.skeleton)
-    fs.writeFileSync("xliff/" + result.data.srcLang + result.data.trgLang + result.data.markdownFileName.replace(/\//gm, "_").replace(".md", ".xlf"), result.xliff)
+    fs.writeFileSync("skeletons/" + result.data.skeletonFilename.replace(/\//gm, "_").replace(/\\/gm, "_"), result.skeleton)
+    fs.writeFileSync("xliff/" + result.data.markdownFileName.replace(/\//gm, "_").replace(/\\/gm, "_").replace(".md", ".xlf"), result.xliff)
 })
