@@ -46,6 +46,7 @@ jobs:
             xliff
             
   PushToSmartcat:
+    needs: [ExtractTranlations]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
