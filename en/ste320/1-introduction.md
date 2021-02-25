@@ -5,7 +5,7 @@ description: Key product information
 
 ## Simplified EU Declaration of conformity
 
-Hereby, Stereotech LLC declares that the 5D printer Stereotech (models: 520 Pro, 530 Pro, 520 Hybrid, 530 Hybrid, 520 Fiber, 530 Fiber) is in conformity with the essential requirements and other relevant requirements of the Directive 2014/53/EU. The full text of the EU declaration of conformity is available at the following internet address: <www.stereotech.org/info/documents> .
+Hereby, Stereotech LLC declares that the 5D printer Stereotech (models: 520 Pro, 530 Pro, 520 Hybrid, 530 Hybrid, 520 Fiber, 530 Fiber) is in conformity with the essential requirements and other relevant requirements of the Directive 2014/53/EU. The full text of the EU declaration of conformity is available at the following internet address: [www.stereotech.org/info/documents] .
 
 ## Exposure to radio frequency
 
@@ -15,10 +15,10 @@ In accordance with Article 10.8 of the Directive 2014/53/EU the 5D printer Stere
 
 In accordance with Article 10.10 of the Directive 2014/53/EU, and as per below list of country codes, the operating bands 5150-5350MHz are strictly for indoor usage only.
 
-![table](/docs/table.jpg)
+![table](/docs/table.JPG)
 
 ## EAEU Declaration of conformity
 
-5D printer Stereotech (models: 520 Pro, 530 Pro, 520 Hybrid, 530 Hybrid, 520 Fiber, 530 Fiber) meets the requirements for this type of equipment on the territory of the Eurasian Economic Union (EAEU declaration of conformity № RU ДRU.НХ37.В.10003/20). The full text of the EAEU declaration of conformity is available at the following internet address: <www.stereotech.org/info/documents> .
+5D printer Stereotech (models: 520 Pro, 530 Pro, 520 Hybrid, 530 Hybrid, 520 Fiber, 530 Fiber) meets the requirements for this type of equipment on the territory of the Eurasian Economic Union (EAEU declaration of conformity № RU ДRU.НХ37.В.10003/20). The full text of the EAEU declaration of conformity is available at the following internet address: [www.stereotech.org/info/documents] .
 
 
