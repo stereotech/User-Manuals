@@ -78,6 +78,7 @@ jobs:
   ReconstructTranslations:
     needs: [PullFromSmartcat]
     runs-on: ubuntu-latest
+    container: node:12.18.2
     steps:
       - name: Checkout current repo
         uses: actions/checkout@v2.3.4
