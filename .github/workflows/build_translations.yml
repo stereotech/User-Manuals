@@ -104,8 +104,8 @@ jobs:
       - name: Reconstruct translations
         run: |
           node ./scripts/reconstruct-translations.js en de
-          cp -a en_reconstructed/. repo/en
-          cp -a de_reconstructed/. repo/de
+          cp -a en_reconstructed/. en
+          cp -a de_reconstructed/. de
           
       - name: Get current date
         id: date
