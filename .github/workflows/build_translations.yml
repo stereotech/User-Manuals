@@ -115,7 +115,6 @@ jobs:
         uses: peter-evans/create-pull-request@v3.8.2
         with:
           token: ${{ secrets.PAT_TOKEN }}
-          path: repo
           commit-message: '[Automated] Update translation'
           branch: update/translations-${{ steps.date.outputs.date }}
           delete-branch: true
