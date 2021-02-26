@@ -3,7 +3,9 @@ node_modules/
 *.bak
 skeletons/
 reconstructed/
+*_reconstructed/
 xliff/
+*_xliff/
 pdf/
 qrcode/
 **/**/!toc.md

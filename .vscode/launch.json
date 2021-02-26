@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "pwa-node",
+            "name": "Run Current File",
+            "request": "launch",
+            "program": "${workspaceFolder}\\scripts\\reconstruct-translations.js",
+            "args": [
+                "en",
+                "de"
+            ]
+        }
+    ]
+}
