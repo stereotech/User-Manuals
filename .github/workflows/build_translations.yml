@@ -1,0 +1,111 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Build Translations
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: 0 9 * * 1
+  
+jobs:
+  ExtractTranlations:
+    runs-on: ubuntu-latest
+    container: node:12.18.2
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      # Runs a single command using the runners shell
+      - name: Cache node modules
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: v1-npm-deps-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: v1-npm-deps-
+
+      # Runs a set of commands using the runners shell
+      - name: Run npm preparation script
+        run: npm ci --cache .npm --prefer-offline
+      
+      - name: Extract translations from user manuals
+        run: node ./scripts/extract-translations.js
+      
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v2.2.0
+        with:
+          name: ru_manuals
+          path: |
+            skeletons
+            xliff
+            
+  PullFromSmartcat:
+    needs: [ExtractTranlations]
+    container: node:12.18.2
+    runs-on: ubuntu-latest
+    env:
+      ACCOUNT_ID: ${{ secrets.ACCOUNT_ID }}
+      API_TOKEN: ${{ secrets.API_TOKEN }}
+      PROJECT_ID: ${{ secrets.PROJECT_ID }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.4
+        with:
+          repository: stereotech/User-Manuals-translation
+    
+      - name: Download a Build Artifact
+        uses: actions/download-artifact@v2.0.8
+        with:
+          # Artifact name
+          name: ru_manuals
+          # Destination path
+          path: vcs/ru_manuals
+          
+      - name: Get docker image
+        run: docker pull smartcatcom/serge:latest
+        
+      - name: Pull translation files from Smartcat
+        run: |
+          ./run-in-docker serge localize
+          ./run-in-docker serge pull-ts localize
+          
+      - name: Checkout current repo
+        uses: actions/checkout@v2.3.4
+        with:
+          path: repo
+
+              # Runs a single command using the runners shell
+      - name: Cache node modules
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: v1-npm-deps-${{ hashFiles('**/repo/package-lock.json') }}
+          restore-keys: v1-npm-deps-
+
+      # Runs a set of commands using the runners shell
+      - name: Run npm preparation script
+        run: |
+          cd repo
+          npm ci --cache .npm --prefer-offline
+          
+      - name: Reconstruct translations
+        run: |
+          cp -a vcs/ru_manuals/. repo/
+          node ./repo/scripts/reconstruct-translations.js en de
+          cp -a repo/en_reconstructed/. repo/en
+          cp -a repo/de_reconstructed/. repo/de
+          
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%m-%d')"
+        
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3.8.2
+        with:
+          token: ${{ secrets.PAT_TOKEN }}
+          path: repo
+          commit-message: '[Automated] Update translation'
+          branch: update/translations-${{ steps.date.outputs.date }}
+          delete-branch: true
+          title: '[Automated] Update translation'
