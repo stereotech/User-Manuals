@@ -1,6 +1,19 @@
 {
     "configurations": [
         {
+            "type": "node",
+            "request": "launch",
+            "name": "Запустить программу",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\scripts\\generate-pdf-new.ts",
+            "preLaunchTask": "tsc: build — tsconfig.json",
+            "outFiles": [
+                "${workspaceFolder}/built_scripts/**/*.js"
+            ]
+        },
+        {
             "type": "pwa-node",
             "name": "Run Current File",
             "request": "launch",

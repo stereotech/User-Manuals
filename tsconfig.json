@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "outDir": "./built_scripts",
+        "allowJs": true,
+        "target": "ES5",
+        "sourceMap": true
+    },
+    "include": [
+        "./scripts/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
