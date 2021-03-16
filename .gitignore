@@ -3,6 +3,8 @@ node_modules/
 *.bak
 skeletons/
 reconstructed/
+pdf_new/
+built_scripts/
 *_reconstructed/
 xliff/
 *_xliff/
