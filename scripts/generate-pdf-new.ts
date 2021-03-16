@@ -32,7 +32,7 @@ var jsonToMd = function (jsonPath: string, outputPath: string) {
 }
 
 var generatePdf = async (inputFolder: string, outputName: string, lang: string) => {
-    var filelist = []
+    var filelist: string[] = []
 
     jsonToMd(`${lang}/${inputFolder}/menu.json`, `${lang}/${inputFolder}/!toc.md`)
 
