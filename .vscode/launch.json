@@ -28,6 +28,12 @@
             "name": "Extract translations",
             "request": "launch",
             "program": "${workspaceFolder}\\scripts\\extract-translations.js"
+        },
+        {
+            "type": "pwa-node",
+            "name": "Generate menus",
+            "request": "launch",
+            "program": "${workspaceFolder}\\scripts\\generate-menu.js"
         }
     ]
 }

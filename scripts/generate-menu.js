@@ -34,24 +34,32 @@ var generateMenuForDirectory = function (dir_path, lang) {
 }
 
 var generateMenus = function () {
-    fs.readdirSync('ru', { withFileTypes: true })
+    fs.readdirSync('ru/software', { withFileTypes: true })
         .filter(dirent => dirent.isDirectory())
-        .map(dirent => path.join('ru', dirent.name))
+        .map(dirent => path.join('ru', 'software', dirent.name))
         .forEach(dir_path => {
             generateMenuForDirectory(dir_path, 'ru')
-            //if (!fs.existsSync(path.join(dir_path, 'menu.json'))) {
-            //    generateMenuForDirectory(dir_path)
-            //}
         })
 
-    fs.readdirSync('en', { withFileTypes: true })
+    fs.readdirSync('ru/printers', { withFileTypes: true })
         .filter(dirent => dirent.isDirectory())
-        .map(dirent => path.join('en', dirent.name))
+        .map(dirent => path.join('ru', 'printers', dirent.name))
+        .forEach(dir_path => {
+            generateMenuForDirectory(dir_path, 'ru')
+        })
+
+    fs.readdirSync('en/software', { withFileTypes: true })
+        .filter(dirent => dirent.isDirectory())
+        .map(dirent => path.join('en', 'software', dirent.name))
         .forEach(dir_path => {
             generateMenuForDirectory(dir_path, 'en')
-            //if (!fs.existsSync(path.join(dir_path, 'menu.json'))) {
-            //    generateMenuForDirectory(dir_path)
-            //}
+        })
+
+    fs.readdirSync('en/printers', { withFileTypes: true })
+        .filter(dirent => dirent.isDirectory())
+        .map(dirent => path.join('en', 'printers', dirent.name))
+        .forEach(dir_path => {
+            generateMenuForDirectory(dir_path, 'en')
         })
 }
 

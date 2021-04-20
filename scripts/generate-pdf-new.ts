@@ -115,12 +115,13 @@ var generatePdfs = function () {
     readdirSync('ru/software', { withFileTypes: true })
         .filter(dirent => dirent.isDirectory())
         .forEach(async (dir_path) => {
-            await generatePdf(dir_path.name, `${dir_path.name}_ru`, 'ru')
+
+            await generatePdf(`software/${dir_path.name}`, `${dir_path.name}_ru`, 'ru')
         })
     readdirSync('ru/printers', { withFileTypes: true })
         .filter(dirent => dirent.isDirectory())
         .forEach(async (dir_path) => {
-            await generatePdf(dir_path.name, `${dir_path.name}_ru`, 'ru')
+            await generatePdf(`printers/${dir_path.name}`, `${dir_path.name}_ru`, 'ru')
         })
 
 }
