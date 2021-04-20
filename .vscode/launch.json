@@ -22,6 +22,12 @@
                 "en",
                 "de"
             ]
+        },
+        {
+            "type": "pwa-node",
+            "name": "Extract translations",
+            "request": "launch",
+            "program": "${workspaceFolder}\\scripts\\extract-translations.js"
         }
     ]
 }

@@ -17,7 +17,8 @@ var walkSync = function (dir, filelist) {
 };
 
 var filelist = []
-filelist = walkSync("ru/", filelist).filter(filename => filename.endsWith(".md"))
+filelist = walkSync("ru/printers", filelist).filter(filename => filename.endsWith(".md"))
+filelist.push(...walkSync("ru/software", filelist).filter(filename => filename.endsWith(".md")))
 
 var extract = require('md2xliff').extract
 var fs = require('fs')

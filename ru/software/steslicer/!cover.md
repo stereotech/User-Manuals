@@ -1,3 +1,8 @@
+---
+title: Stereotech STE Slicer
+description: Руководство пользователя
+---
+
 # Stereotech STE Slicer
 
 # Руководство пользователя
