@@ -1,16 +1,16 @@
 ---
 title: Часто задаваемые вопросы
-description: Вопросы по 3D-принтеру STE520
+description: Вопросы по 5D принтеру STE520
 ---
 
 # Часто задаваемые вопросы
 
-# Вопросы по 3D-принтеру STE520
+# Вопросы по 5D принтеру STE520
 
 <br/><br/>
 
-![stereotech]()
+![stereotech](/docs/stereotech.jpg)
 
 <br/><br/>
 
-![title]()
+![title](/docs/faq/introduction/1.jpg)
