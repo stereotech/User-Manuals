@@ -1,3 +1,8 @@
+---
+title: Stereotech 5xx series
+description: User guide
+---
+
 # Stereotech 5xx series
 
 # User guide

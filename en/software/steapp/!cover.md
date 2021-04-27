@@ -1,3 +1,8 @@
+---
+title: Stereotech STE App
+description: User guide
+---
+
 # Stereotech STE App
 
 # User guide

@@ -1,3 +1,8 @@
+---
+title: Stereotech 3xx series
+description: User guide
+---
+
 # Stereotech 3xx series
 
 # User guide
