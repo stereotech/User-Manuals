@@ -1,9 +1,9 @@
 ---
-title: Stereotech серия 5хх
+title: Stereotech 530 Hybrid
 description: Руководство пользователя
 ---
 
-# Stereotech серия 5хх
+# Stereotech 530 Hybrid
 
 # Руководство пользователя
 
