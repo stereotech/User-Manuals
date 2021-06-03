@@ -5,4 +5,4 @@ description: Печать непрерывными волокнами
 
 ## Подготовка моделей для печати непрерывными волокнами
 
-Для подготовки моделей к печати с армированием непрерывным волокном изучите руководство пользователя для Stereotech STE Slicer, расположенное [здесь](https://support.stereotech.org/software/steslicer/6-fiberprinting)
+Для подготовки моделей к печати с армированием непрерывным волокном изучите руководство пользователя для Stereotech STE Slicer, расположенное [здесь](https://support.stereotech.org/software/steslicer/4-fiberprinting)
