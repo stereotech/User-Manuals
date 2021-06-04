@@ -7,7 +7,7 @@ description: Быстрый старт
 
 ## Комплектация
 
-![In the box](/docs/ste320/quickstart/in_the_box.jpg)
+![In the box](/docs/hfe520/quickstart/in_the_box.jpg)
 
 | №   | Позиция                            |
 | --- | ---------------------------------- |
@@ -23,7 +23,7 @@ description: Быстрый старт
 
 Откройте смотровое окно 5D принтера. Для этого возьмитесь двумя руками за ручки и потяните на себя.
 
-![quickstart 4](/docs/ste320/quickstart/remove_front.jpg)
+![quickstart 4](/docs/hfe520/quickstart/remove_front.jpg)
 
 Воспользуйтесь кусачками из **сумки с принадлежностями** для удаления транспортировочных стяжек. Удалите две транспортировочные стяжки в передней верхней части 5D принтера на ремнях.
 
@@ -32,11 +32,11 @@ description: Быстрый старт
 
 Удалите транспортировочную стяжку фиксации рабочей платформы.
 
-![Remove locks](/docs/ste320/quickstart/remove_locks.jpg)
+![Remove locks](/docs/hfe520/quickstart/remove_locks.jpg)
 
 Подключите первый разъем **кабеля питания 220В** к задней панели 5D принтера. Подключите второй разъем **кабеля питания 220В** к сети.
 
-![Connect power](/docs/ste320/quickstart/connect_power.jpg)
+![Connect power](/docs/hfe520/quickstart/connect_power.jpg)
 
 > **Внимание!**
 Убедитесь, что питающее напряжение Вашей сети соответствует 220В /50 Гц

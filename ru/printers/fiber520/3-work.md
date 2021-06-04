@@ -81,29 +81,29 @@ description: Работа с принтером
 * 5D калибровка
 * Установка нулевой точки
 
-![5D managers](/docs/ste520/work/5d_managers.jpg)
+![5D managers](/docs/hfe520/work/5d_managers.jpg)
 
 ### Менеджер 5D калибровки
 
 Менеджер 5D калибровки необходим для калибровки вращательной оси A. При использовании данного менеджера необходимо воспользоваться калибровочным инструментом.
 
-![5D Calibration](/docs/ste520/work/5d_calibration_1.jpg)
+![5D Calibration](/docs/hfe520/work/5d_calibration_1.jpg)
 
 Установите калибровочный инструмент на платформу и следуйте инструкциям на экране.
 
-![5D Calibration 2](/docs/ste520/work/5d_calibration_2.jpg)
+![5D Calibration 2](/docs/hfe520/work/5d_calibration_2.jpg)
 
 ### Калибровка вращательной оси A без использования калибровочного инструмента
 
 В некоторых случаях возникает необходимость установить положение оси А без использования калибровочного инструмента. Для этого закрепите основание для печати на платформе и подведите сопло печатающей головки к началу основания, используя стрелки на панели управления.
 
-![Axis](/docs/ste520/work/axis.jpg)
+![Axis](/docs/hfe520/work/axis.jpg)
 
-![Start point](/docs/ste520/work/start_point.jpg)
+![Start point](/docs/hfe520/work/start_point.jpg)
 
 Перемещаясь по осям **Y** и **A** задайте основанию горизонтальное положение (зазор между соплом и основанием должен быть одинаковым по всей длине основания)
 
-![End point](/docs/ste520/work/end_point.jpg)
+![End point](/docs/hfe520/work/end_point.jpg)
 
 Далее необходимо открыть терминал на панели управления и ввести следующие команды:
 
@@ -126,7 +126,7 @@ description: Работа с принтером
 > **Внимание!**
 Для режима **Spiral5D Full** необходимо произодить калибровку дважды, используя режимы **Классический** и **Spiral5D**
 
-![Spiral5D calibration](/docs/ste520/work/spiral_5d_calibration.jpg)
+![Spiral5D calibration](/docs/hfe520/work/spiral_5d_calibration.jpg)
 
 ## Системы координат принтера
 
